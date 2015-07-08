@@ -1,3 +1,5 @@
+# Calculate local cost
+
 def calc_cycle_cost_local(
 	n_servers,
 	n_switches,
@@ -42,4 +44,23 @@ def calc_floor_cost(floor_cost, server_power_peak, CPU_util, server_power_idle, 
 def calc_total_cycles(CPU_util, CPU_freq, n_servers):
 	return CPU_util * CPU_freq * n_servers
 
+# Calc Savings
+
+def calc_savings(cycles_source, cycle_cost_source, cycles_dest, cycle_cost_dest, trans_cost):
+	return (cycles_source * cycle_cost_source) - (cycles_dest * cycle_cost_dest) - trans_costs
+
+# Calculate learning curve
+
+def calc_learning_curve
+
+
+
+
+
+
+
+
+
 print calc_cycle_cost_local(10, 10, 0.01, 250, 10000, 2000, 3000, 3000, 10, 0.1, 2000000000, 5, 5, 500, 250, 1.3)
+
+
